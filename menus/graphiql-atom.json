@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle graphiql-atom",
+        "command": "graphiql-atom:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "graphiql-atom",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "graphiql-atom:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

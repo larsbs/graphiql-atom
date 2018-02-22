@@ -1,0 +1,23 @@
+{
+  "name": "graphiql-atom",
+  "main": "./lib/graphiql-atom",
+  "version": "0.0.0",
+  "description": "A short description of your package",
+  "keywords": [],
+  "activationCommands": {
+    "atom-workspace": "graphiql-atom:toggle"
+  },
+  "deserializers": {
+    "graphiql-atom/GraphiqlAtomView": "deserializeActiveEditorInfoView"
+  },
+  "repository": "https://github.com/atom/graphiql-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "graphiql": "^0.11.11",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

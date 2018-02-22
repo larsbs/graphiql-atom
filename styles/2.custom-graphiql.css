@@ -1,0 +1,411 @@
+/*
+ * ENTRYPOINT INPUT
+ *
+ * Component file
+ */
+/*
+ * VARS
+ *
+ * Variables file
+ */
+.EntrypointInput__input {
+  width: 100%;
+  background: #151C20;
+  border: 1px solid rgba(0, 0, 0, .2);
+  padding: 8px 16px;
+  border-radius: 3px;
+  color: #EEFFFF;
+  font-size: 0.9em;
+  outline: none !important;
+  font-family: 'Roboto', sans-serif;
+}
+.EntrypointInput__input::-webkit-input-placeholder {
+  color: rgba(238, 255, 255, .5);
+}
+.EntrypointInput__input:-ms-input-placeholder {
+  color: rgba(238, 255, 255, .5);
+}
+.EntrypointInput__input::-ms-input-placeholder {
+  color: rgba(238, 255, 255, .5);
+}
+.EntrypointInput__input::placeholder {
+  color: rgba(238, 255, 255, .5);
+}
+/*
+ * BUTTON
+ *
+ * Component file
+ */
+/*
+ * VARS
+ *
+ * Variables file
+ */
+.Button {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .2))), #3b4d56;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .2)), #3b4d56;
+  border: 1px solid rgba(0, 0, 0, .5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #EEFFFF;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 3px;
+  outline: 0 !important;
+  cursor: pointer;
+}
+.Button:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+.Button:active {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+.Button:disabled {
+  opacity: 0.6;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1" /><feFuncG type="linear" slope="1" /><feFuncB type="linear" slope="1" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+  cursor: default;
+}
+/*
+ * TOOLBAR
+ *
+ * Component file
+ */
+/*
+ * VARS
+ *
+ * Variables file
+ */
+.Toolbar {
+  background: #263238;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.Toolbar__input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 16px;
+}
+.Toolbar__headersToggle {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.Toolbar__headersToggleButton {
+  width: 150px;
+}
+/*
+ * HEADER
+ *
+ * Component file
+ */
+/*
+ * CUSTOM GRAPHIQL
+ *
+ * Component file
+ */
+/*
+ * VARS
+ *
+ * Variables file
+ */
+.graphiql-container {
+  font-family: 'Roboto', sans-serif;
+}
+.graphiql-container .topBar {
+  height: auto;
+  padding: 8px 16px;
+  background: #263238;
+  border-bottom: 1px solid rgba(0, 0, 0, .5);
+  color: #EEFFFF;
+}
+.graphiql-container .execute-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .2))), #3b4d56;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .2)), #3b4d56;
+  border: 1px solid rgba(0, 0, 0, .5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.graphiql-container .execute-button svg {
+  fill: #EEFFFF;
+}
+.graphiql-container .execute-button:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+.graphiql-container .execute-button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .2))), #3b4d56;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .2)), #3b4d56;
+  border: 1px solid rgba(0, 0, 0, .5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+.graphiql-container .toolbar-button {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .2))), #3b4d56;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .2)), #3b4d56;
+  border: 1px solid rgba(0, 0, 0, .5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #EEFFFF;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  border-radius: 3px;
+}
+.graphiql-container .toolbar-button:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+.graphiql-container .toolbar-button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .2))), #3b4d56;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .2)), #3b4d56;
+  border: 1px solid rgba(0, 0, 0, .5);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(0.7);
+          filter: brightness(0.7);
+}
+.graphiql-container .docExplorerShow {
+  min-width: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .2))), #3b4d56;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .2)), #3b4d56;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-top: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #EEFFFF;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 8px 16px;
+}
+.graphiql-container .docExplorerShow:hover {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.2" /><feFuncG type="linear" slope="1.2" /><feFuncB type="linear" slope="1.2" /></feComponentTransfer></filter></svg>#filter');
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+.graphiql-container .docExplorerShow::before {
+  border-color: #EEFFFF;
+}
+.graphiql-container .doc-explorer,
+.graphiql-container .historyPaneWrap > div {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.graphiql-container .doc-explorer-title-bar,
+.graphiql-container .history-title-bar {
+  height: auto;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: rgba(0, 0, 0, .8);
+}
+.graphiql-container .doc-explorer-title,
+.graphiql-container .history-title {
+  font-weight: 400;
+}
+.graphiql-container .doc-explorer-contents,
+.graphiql-container .history-contents {
+  position: relative;
+  top: auto;
+  border: none;
+}
+.graphiql-container .history-contents {
+  border-top: 1px solid rgba(0, 0, 0, .2);
+}
+.graphiql-container .search-box {
+  position: static;
+  border: none;
+  font-size: 1rem;
+  margin: auto;
+  margin-bottom: 16px;
+}
+.graphiql-container .search-box::before {
+  content: none;
+}
+.graphiql-container .search-box input {
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 3px;
+  background: rgba(0, 0, 0, .05);
+  padding: 8px 16px;
+}
+.graphiql-container .queryWrap {
+  overflow: hidden;
+}
+.graphiql-container .error-container {
+  position: static;
+  padding-top: 16px;
+}
+/*
+ * VARS
+ *
+ * Variables file
+ */
+.Modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, .7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 99999;
+  overflow: hidden;
+}
+.modalTransition-enter {
+  opacity: 0;
+}
+.modalTransition-enter [data-element="modal"] {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  opacity: 0;
+}
+.modalTransition-enter-active {
+  opacity: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+  transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+}
+.modalTransition-enter-active [data-element="modal"] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  -webkit-transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+  transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+}
+.modalTransition-exit {
+  opacity: 1;
+}
+.modalTransition-exit [data-element="modal"] {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+.modalTransition-exit-active {
+  opacity: 0.01;
+  -webkit-transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+  transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+}
+.modalTransition-exit-active [data-element="modal"] {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.01;
+  -webkit-transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+  transition: all 0.3s cubic-bezier(0.44, 0.11, 0.07, 1.29);
+}
+/*
+ * HEADERS MODAL
+ *
+ * Component file
+ */
+/*
+ * VARS
+ *
+ * Variables file
+ */
+.HeadersModal {
+  width: 600px;
+  background: #263238;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
+          box-shadow: 0 2px 15px rgba(0, 0, 0, .3);
+}
+.HeadersModal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px;
+}
+.HeadersModal__close {
+  cursor: pointer;
+}
+.HeadersModal__close svg {
+  stroke: rgba(238, 255, 255, .7);
+}
+.HeadersModal__close:hover svg {
+  stroke: #EEFFFF;
+}
+.HeadersModal__body {
+  padding: 16px;
+}
+.HeadersModal__textarea {
+  width: 100%;
+  height: 300px;
+  background: #1E2B30;
+  border: 1px solid rgba(0, 0, 0, .5);
+  border-radius: 3px;
+  padding: 16px;
+  outline: 0 !important;
+  color: #EEFFFF;
+  font-family: monospace;
+  font-size: 16px;
+}
+.HeadersModal__error {
+  color: red;
+  font-size: 0.76em;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+.HeadersModal__footer {
+  padding: 16px;
+  text-align: right;
+}
+.HeadersModal__footer button {
+  margin-left: 16px;
+}
+/*
+ * ROOT
+ *
+ * Route file
+ */
+.Main__mainLayout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas: "header" "main";
+}
+.Main__header {
+  grid-area: header;
+}
+.Main__main {
+  grid-area: main;
+}
